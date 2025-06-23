@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.img {
+  height: 90px;
+}
+
+.info ul {
+  display: flex;
+  gap: 20px;           /* adds spacing between list items */
+  list-style: none;    /* removes bullets */
+  margin: 0;
+  padding: 39px;
+}
+
+.kfc-logo{
+    width: 200px;
+}
+
+.kfc { 
+    width: 250px;
+    background-color: #f0f0f0;
+    margin: 50px;
+}
+
+.res-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer{
+    height: 10px;
+    border: 1px solid black;
+}
