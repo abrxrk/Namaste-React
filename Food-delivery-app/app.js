@@ -22,7 +22,389 @@ const Header = () => {
   );
 };
 
-const ResCard = () => {
+const resList = [
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "121603",
+      name: "Kannur Food Point",
+      uuid: "51983905-e698-4e31-b0d7-e376eca56320",
+      city: "1",
+      area: "Tavarekere",
+      totalRatingsString: "10000+ ratings",
+      cloudinaryImageId: "bmwn4n4bn6n1tcpc8x2h",
+      cuisines: ["Kerala", "Chinese"],
+      tags: [],
+      costForTwo: 30000,
+      costForTwoString: "₹300 FOR TWO",
+      deliveryTime: 24,
+      minDeliveryTime: 24,
+      maxDeliveryTime: 24,
+      slaString: "24 MINS",
+      lastMileTravel: 3,
+      slugs: {
+        restaurant: "kannur-food-point-btm",
+        city: "bangalore",
+      },
+      cityState: "1",
+      address:
+        "6/21,9TH CROSS ,1ST MAIN, VENKATESHWARA LAYOUT,SG PALYA, BENGALURU, - 560093",
+      locality: "SG Palya",
+      parentId: 20974,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      aggregatedDiscountInfo: {
+        header: "50% off",
+        shortDescriptionList: [
+          {
+            meta: "50% off on all orders",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "50% off on all orders",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      aggregatedDiscountInfoV2: {
+        header: "50% OFF",
+        shortDescriptionList: [
+          {
+            meta: "",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "50% off on all orders",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      ribbon: [
+        {
+          type: "PROMOTED",
+        },
+      ],
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 3700,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 3700,
+        message: "",
+        title: "Delivery Charge",
+        amount: "3700",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "cid=6274849~p=1~eid=00000187-2c1c-96f0-0062-eea200b00103",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "3 kms",
+      hasSurge: false,
+      sla: {
+        restaurantId: "121603",
+        deliveryTime: 24,
+        minDeliveryTime: 24,
+        maxDeliveryTime: 24,
+        lastMileTravel: 3,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: true,
+      avgRating: "3.9",
+      totalRatings: 10000,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "229",
+      name: "Meghana Foods",
+      uuid: "4fdd19e2-5d0f-4bde-9c7f-dc3e8d36021f",
+      city: "1",
+      area: "Koramangala",
+      totalRatingsString: "10000+ ratings",
+      cloudinaryImageId: "xqwpuhgnsaf18te7zvtv",
+      cuisines: [
+        "Biryani",
+        "Andhra",
+        "South Indian",
+        "North Indian",
+        "Chinese",
+        "Seafood",
+      ],
+      tags: [],
+      costForTwo: 50000,
+      costForTwoString: "₹500 FOR TWO",
+      deliveryTime: 16,
+      minDeliveryTime: 16,
+      maxDeliveryTime: 16,
+      slaString: "16 MINS",
+      lastMileTravel: 1.399999976158142,
+      slugs: {
+        restaurant: "meghana-foods-5th-block-koramangala",
+        city: "bangalore",
+      },
+      cityState: "1",
+      address:
+        "124, Near Jyothi Nivas College, 1st Cross, KHB Colony, Koramangala 5th Block, Bangalore",
+      locality: "5th Block",
+      parentId: 635,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 2900,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 2900,
+        message: "",
+        title: "Delivery Charge",
+        amount: "2900",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "1.3 kms",
+      hasSurge: false,
+      sla: {
+        restaurantId: "229",
+        deliveryTime: 16,
+        minDeliveryTime: 16,
+        maxDeliveryTime: 16,
+        lastMileTravel: 1.399999976158142,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: false,
+      avgRating: "4.4",
+      totalRatings: 10000,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "428",
+      name: "Biryani Pot",
+      uuid: "6db20a8b-dd85-4148-b750-107169f7f826",
+      city: "1",
+      area: "Btm Layout",
+      totalRatingsString: "10000+ ratings",
+      cloudinaryImageId: "mdipoyzfzsa7n7igskht",
+      cuisines: ["North Indian", "Biryani"],
+      tags: [],
+      costForTwo: 50000,
+      costForTwoString: "₹500 FOR TWO",
+      deliveryTime: 19,
+      minDeliveryTime: 19,
+      maxDeliveryTime: 19,
+      slaString: "19 MINS",
+      lastMileTravel: 1.899999976158142,
+      slugs: {
+        restaurant: "biryani-pot-madiwala-junction-btm",
+        city: "bangalore",
+      },
+      cityState: "1",
+      address: "14th  Cross, 4th link Road Maruthi Nagar Madiwala Bangalore 68",
+      locality: "Maruti Nagar",
+      parentId: 21798,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      aggregatedDiscountInfo: {
+        header: "20% off",
+        shortDescriptionList: [
+          {
+            meta: "20% off | Use TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "20% off up to ₹50 | Use code TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      aggregatedDiscountInfoV2: {
+        header: "20% OFF",
+        shortDescriptionList: [
+          {
+            meta: "Use TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "20% off up to ₹50 | Use code TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 2900,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 2900,
+        message: "",
+        title: "Delivery Charge",
+        amount: "2900",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "1.8 kms",
+      hasSurge: false,
+      sla: {
+        restaurantId: "428",
+        deliveryTime: 19,
+        minDeliveryTime: 19,
+        maxDeliveryTime: 19,
+        lastMileTravel: 1.899999976158142,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: false,
+      avgRating: "3.9",
+      totalRatings: 10000,
+      new: false,
+    },
+    subtype: "basic",
+  },
+];
+
+const ResCard = ({ resData }) => {
   return (
     <div className="kfc">
       <img
@@ -30,58 +412,50 @@ const ResCard = () => {
         alt="res-img"
         src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/12/9/0dbbc14f-84a2-4916-98eb-ca06adb3fe97_16059.JPG"
       ></img>
-      <h3>KFC</h3>
+      <h3>{resData.data.name}</h3>
+      <p>{resData.data.deliveryTime} minutes</p>
     </div>
   );
 };
 
 const Search = () => {
-    return (
-        <div className="search">
-            <div className="search bar">
-                <input></input>
-                <button>Search</button>
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="search">
+      <div className="search bar">
+        <input></input>
+        <button>Search</button>
+      </div>
+    </div>
+  );
+};
 const Body = () => {
   return (
     <div className="body">
       <div className="search">
-        <Search/>
+        <Search />
       </div>
       <div className="res-card">
-        <ResCard />
-        <ResCard />
-        <ResCard />
-        <ResCard />
-        <ResCard />
-        <ResCard />
-        <ResCard />
-        <ResCard />
-        <ResCard />
-        <ResCard />
-        <ResCard />
-
+        {resList.map((restaurants) => (
+          <ResCard   key={restaurants.data.id} resData={restaurants} />
+        ))}
       </div>
     </div>
   );
 };
 
-const Footer=()=> {
-    return (
-        <div className="footer">
-            <footer></footer>
-        </div>
-    )
-}
+const Footer = () => {
+  return (
+    <div className="footer">
+      <footer></footer>
+    </div>
+  );
+};
 const AppLayout = () => {
   return (
     <div className="container">
       <Header />
       <Body />
-      <Footer/>
+      <Footer />
     </div>
   );
 };
