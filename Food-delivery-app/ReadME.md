@@ -5,3 +5,5 @@ Three components:-
 - Body 
  -Rest cards, Search bar, Search button
 -Footer
+
+
